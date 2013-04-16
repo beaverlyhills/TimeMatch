@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/settingsHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:text="@string/remove_hint"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <ListView
+        android:id="@+id/clockList"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/timeStartLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:text="@string/time_start"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/timeStartValueLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:text="0"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <SeekBar
+            android:id="@+id/timeStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="24" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/timeRangeLable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:text="@string/time_ranga_length"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/timeRangeValueLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:text="0"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <SeekBar
+            android:id="@+id/timeRange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="11" />
+
+    </LinearLayout>
+
+</LinearLayout>
